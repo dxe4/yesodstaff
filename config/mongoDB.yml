@@ -1,24 +1,24 @@
 Default: &defaults
-  user: yesod-
-  password: yesod-
+  user: yesod
+  password: yesod
   host: localhost
-  database: yesod-
+  database: yesod
   connections: 10
 
 Development:
   <<: *defaults
 
 Testing:
-  database: yesod-_test
+  database: yesod_test
   <<: *defaults
 
 Staging:
-  database: yesod-_staging
+  database: yesod_staging
   connections: 100
   <<: *defaults
 
 Production:
-  database: yesod-_production
+  database: yesod_production
   connections: 100
   host: localhost
   <<: *defaults

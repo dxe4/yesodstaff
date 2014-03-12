@@ -1,5 +1,5 @@
 {-# LANGUAGE PackageImports #-}
-import "yesod-" Application (getApplicationDev)
+import "yesod" Application (getApplicationDev)
 import Network.Wai.Handler.Warp
     (runSettings, defaultSettings, settingsPort)
 import Control.Concurrent (forkIO)
